@@ -13,7 +13,7 @@ const config = {
 	entry: './app/app.js',
 	output: {
 		filename: 'myBundle.[hash].js',
-		path: path.resolve(__dirname, 'dist'),
+		path: path.resolve(__dirname, 'docs'),
 	},
 	plugins: [new HtmlWebpackPlugin({ template: './app/index.html' })],
 
@@ -45,7 +45,7 @@ const config = {
 
 	devServer: {
 		port: 8080,
-		contentBase: path.resolve(__dirname, 'dist'),
+		contentBase: path.resolve(__dirname, 'docs'),
 		// make it super fast by injecting new code not reloading
 		hot: true,
 	},
