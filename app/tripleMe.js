@@ -1,5 +1,5 @@
-function triplMe(x) {
+function tripleMe(x) {
 	return x * 3
 }
 
-export default triplMe
+export default tripleMe
